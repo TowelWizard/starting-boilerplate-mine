@@ -19,7 +19,7 @@ class BootLevel extends Phaser.Scene {
       textureURL: 'static/assets/font/OswaldLightRed.png',
       fontDataURL: 'static/assets/font/OswaldLightRed.xml',
     });
-    this.load.image('DragonLogo', 'static/assets/DragonLogo.png');
+    this.load.image('logo', 'static/assets/DragonLogo1.png');
     this.load.image('splashscreen', 'static/assets/splashscreen.png');
   }
 
@@ -37,7 +37,7 @@ class SplashLevel extends Phaser.Scene {
   preload() {
     const splashScreen = this.add.image(200, 200, 'splashscreen');
 
-    const logo = this.add.image(200, 100, 'DragonLogo');
+    const logo = this.add.image(200, 100, 'DragonLogo1');
     logo.setScale(0.3);
     this.logo = logo;
 
